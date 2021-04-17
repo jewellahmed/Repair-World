@@ -1,0 +1,22 @@
+.info-card{
+
+    padding:0 5px;
+}
+.info-primary {
+
+    background-color: rgb(34, 190, 190);
+}
+.info-dark{
+
+    background-color:rgb(80, 53, 102);
+}
+.font-icon{
+
+    font-size:3em;
+}
+.info-container{
+
+    height: 100px;
+    padding:25px;
+}
+

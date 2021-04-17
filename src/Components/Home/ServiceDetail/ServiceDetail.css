@@ -1,0 +1,12 @@
+.service-container{
+
+    background-color: rgb(177, 213, 218);
+    padding:10px;
+    height:300px;
+    margin-top:2px;
+}
+.service-container h5{
+
+    margin-left: 25px;
+}
+

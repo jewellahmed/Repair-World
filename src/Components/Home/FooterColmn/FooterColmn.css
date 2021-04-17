@@ -1,0 +1,10 @@
+.text-link {
+    text-decoration: none;
+}
+.text-link:hover {
+    color: #776cd6;
+    
+}
+hr {
+    color: white;
+}
