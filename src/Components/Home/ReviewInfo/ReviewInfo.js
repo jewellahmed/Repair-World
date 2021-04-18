@@ -9,11 +9,13 @@ const ReviewInfo = ({ review }) => {
 
         <div className="col-md-4">
             <div className={`review-container justify-content-center`}>
-               
-                    <h5>{review.title}</h5>
-                    <small>{review.description}</small>
-                   
-                
+
+                <h3>{review.name}'s <span><h6>opinion about</h6></span></h3>
+                <h5>  "{review.company}"</h5>
+
+                <small>{review.description}</small>
+
+
             </div>
 
         </div>

@@ -34,6 +34,7 @@ const Login = () => {
     const history = useHistory();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
+    
 
    
     // console.log(loggedInUser.name)
@@ -41,14 +42,19 @@ const Login = () => {
 
     const handleGoogleSignIn = () => {
 
-        var provider = new firebase.auth.GoogleAuthProvider();
+        const provider = new firebase.auth.GoogleAuthProvider();
+        
+       
         firebase.auth()
             .signInWithPopup(provider)
+            
+            
             .then((result) => {
+               
                 var credential = result.credential;
-                const { displayName, email } = result.user;
-                // console.log(result.user)
-                const signedInUser = { name: displayName, email: email };
+                const { email,displayName} = result.user;
+                console.log(result.user)
+                const signedInUser = {email: email, name: displayName };
                 // console.log(signedInUser)
                 setLoggedInUser(signedInUser);
                 history.replace(from)
@@ -158,6 +164,9 @@ const Login = () => {
                     newUserInfo.error = '';
                     newUserInfo.success = true;
                     setUser(newUserInfo);
+                    setLoggedInUser(newUserInfo);
+                    console.log(newUserInfo)
+                    history.replace(from)
     
                 })
                 .catch(error => {

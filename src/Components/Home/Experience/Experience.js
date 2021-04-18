@@ -12,7 +12,7 @@ const Experience = () => {
                     <div class="card-body mt-3">
                         <h1 class="text-uppercase mb-3"><span style={{ color: 'green' }}>10 YEARS OF EXPERIENCE </span> </h1>
                         {/* <h5 class="text-black mb-4">We provide high solution for your electronics device. <br />Come to us for Best Mechanic & Best Service</h5> */}
-                        <p></p>We’re not only here to fix your device but also make sure you are informed and comfortable with the whole process. We’ll keep you updated and you feel comfortable with our services.<p/>
+                        <p>We’re not only here to fix your device but also make sure you are informed and comfortable with the whole process. We’ll keep you updated and you feel comfortable with our services.</p>
 
                         <a href="https://www.mobicarebd.com/">
 

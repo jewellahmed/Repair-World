@@ -16,9 +16,9 @@ const Services = () => {
 
     return (
         <section className="heading-container mt-3 justify-content-center">
-            <div class="card-body mt-3 ms-5">
+            <div class="card-style mt-3 ms-5">
                 <h3 className="text-uppercase mb-2">Services</h3>
-                <p class="text-black mb-4">Any kinds of digital device problem you need fixed. We can help! Check out our digital device repair services to find more information of what exactly we provide and if it suites your needs.</p>
+                <h5 class="text-black mb-4">Find's Your Need</h5>
 
             </div>
             <section className="d-flex justify-content-center">

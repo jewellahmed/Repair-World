@@ -1,47 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReviewInfo from '../ReviewInfo/ReviewInfo';
 import './Review.css'
 
 
 const Review = () => {
-    const reviewData = [
 
-        {
-            title: 'Mr Amit',
-            description: 'We can fix all types of laptops issues within shortest time and ensure your repair goes smoothly',
-            background:'primary'
+    const [reviews, setReviews] = useState([]);
+    useEffect(() => {
 
+        fetch('https://stark-lowlands-05831.herokuapp.com/review')
+            .then(res => res.json())
+            .then(reviews => setReviews(reviews))
 
-        },
-        {
-            title: 'Mrs Sajeda',
-            description: 'You can get highest quality repair services on any brand tablet. Bring it for a free diagnostic',
-            background:'dark'
-
-
-        },
-        {
-            title: 'Abdul Karim',
-            description: 'We repair all brands of mobile phone with 100% customer satisfaction and we offer 90 day warranty',
-            background:'primary'
-
-
-        }
-    ];
+    }, [])
 
     return (
-        <section className="mb-4 justify-content-center">
+        <section className="ms-5 mb-4 justify-content-center">
             <div class="card-body mt-3 ms-5">
                 <h3 className="text-uppercase mb-2">Review</h3>
                 <p class="text-black mb-4">Our Customer's Opinion</p>
+                <h5>See! How Our Customer's Rate Us</h5>
 
             </div>
             <section className="d-flex justify-content-center">
                 <div className="w-55 row">
-                     {
-                        reviewData.map(review =><ReviewInfo review={review}></ReviewInfo>)
+                    {
+                        reviews.map(review => <ReviewInfo review={review}></ReviewInfo>)
                     }
-                      
+
 
 
                 </div>

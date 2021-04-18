@@ -6,6 +6,7 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
 import Review from '../Review/Review';
 import Services from '../Services/Services';
+import Team from '../Team/Team';
 
 const Header = () => {
     return (
@@ -21,6 +22,8 @@ const Header = () => {
             <Experience></Experience>
             <br/>
             <Review></Review>
+            <br/>
+            <Team></Team>
             <br/>
             <Footer></Footer>
             

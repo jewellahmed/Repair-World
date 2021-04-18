@@ -1,9 +1,24 @@
 .review-container{
 
     background-color: rgb(177, 213, 218);
-    padding:10px;
-    height:170px;
+    padding:5px;
+    height:200px;
     margin-top:2px;
     
     
+}
+.review-container h3{
+
+    margin-left: 80px;
+    color:
+}
+.review-container h6{
+
+    margin-left:-15px;
+    margin-top: 5px;
+}
+.review-container h5{
+
+    margin-left:45px;
+    color:rgb(30, 88, 110)
 }
